@@ -1,0 +1,25 @@
+class GameBegin extends eui.Component implements  eui.UIComponent {
+	
+	public begin_btn:eui.Button;
+
+
+	public constructor() {
+		super();
+	}
+
+	protected partAdded(partName:string,instance:any):void
+	{
+		super.partAdded(partName,instance);
+	}
+
+
+	protected childrenCreated():void
+	{
+		super.childrenCreated();
+		this.begin_btn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.handler,this);
+
+	}
+	private handler(){
+		SceneManager.Shared().chage('begin');
+	}
+}

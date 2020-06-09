@@ -1,0 +1,10 @@
+{
+  "172997c5981": {
+    "path": "../resource/scene/GameBegin.ts",
+    "class": "GameBegin",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  }
+}
